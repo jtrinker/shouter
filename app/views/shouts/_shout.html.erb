@@ -1,0 +1,11 @@
+<!-- div_for adds an id of objectname_id and class of objectname.
+	 Nice because you get the free class added to your div to use for styling.
+-->
+
+<%= div_for shout do %>
+	<%= link_to shout.user.username, shout.user %>
+	shouted
+	<%= shout.body %>
+	<%= link_to time_ago_in_words(shout.created_at), shout %>
+	ago
+<% end %>

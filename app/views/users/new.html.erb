@@ -1,0 +1,23 @@
+<!--
+  Remember rails 4 has strong_params. This forces you to specify
+  and PERMIT which attrs you want to allow from the form via
+  your controller.
+-->
+
+<%= form_for @user do |form| %>
+  <div>
+    <%= form.label :username %>
+    <%= form.text_field :username %>
+  </div>
+  <div>
+    <%= form.label :email %>
+    <%= form.email_field :email %>
+  </div>
+  <div>
+    <%= form.label :password %>
+    <%= form.password_field :password %>
+  </div>
+  <div>
+    <%= form.submit "Sign up" %>
+  </div>
+<% end %>

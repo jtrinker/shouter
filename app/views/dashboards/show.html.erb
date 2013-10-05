@@ -1,0 +1,11 @@
+<h1>Dashboard</h1>
+
+<%= form_for @shout do |form| %>
+	<%= form.text_field :body, placeholder: 'Shout!' %>
+	<%= form.submit 'Shout!' %>
+<% end %>
+
+<!-- when you render on an array it will try and load a partial for each different type of object.
+	 so this will look for a partial named _shouts
+-->
+<%= render @shouts %>
