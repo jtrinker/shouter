@@ -7,6 +7,7 @@ gem 'rails', '4.0.0'
 gem 'sqlite3'
 
 gem 'monban', '0.0.6'
+gem 'paperclip', '3.4.0'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'

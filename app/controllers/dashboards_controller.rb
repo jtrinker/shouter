@@ -1,7 +1,8 @@
 class DashboardsController < ApplicationController
   def show
-  	# Building a new Shout from dashboards#show
-  	@shout = Shout.new
+  	# Building a new TextShout from dashboards#show
+  	@text_shout = TextShout.new
+  	@photo_shout = PhotoShout.new
   	@shouts = current_user.shouts
   end
 end
