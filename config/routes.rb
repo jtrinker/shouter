@@ -1,6 +1,4 @@
 Shouter::Application.routes.draw do
-  get "shouts/create"
-  get "dashboards/show"
   # add this to make sure the homepage is only using a get request
   root 'homes#show', via: :get
 
